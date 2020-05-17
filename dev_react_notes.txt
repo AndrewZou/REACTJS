@@ -1,0 +1,52 @@
+https://www.youtube.com/watch?v=sBws8MSXN7A
+After install nodejs, please follow these steps below.
+
+Fix problem for create-react-app command.
+Error message:
+A template was not provided. This is likely because you're using an outdated version of create-react-app.
+Please note that global installs of create-react-app are no longer supported.
+
+Solution: https://upmostly.com/tutorials/template-not-provided-using-create-react-app
+(1) npm uninstall -g create-react-app
+Check if files are removed. where for windows, which for linux
+(2) where/which create-react-app 
+The worst case to remove the file manually, if needed
+(3) rm -rf /usr/local/bin/create-react-app
+
+(4) npx create-react-app <project-name>
+or
+
+(5) npm init react-app <project-name>
+
+//Install react-router package
+npm i -S react-router-dom
+
+//Install javascript HTTP library
+npm i axios
+
+//Sample data host
+axios.get('
+https://jsonplaceholder.typicode.com/todos?_limit=10
+').then( res => {} );
+
+git init
+dir all
+dir
+git add .
+git commit -m "first time commit this project"
+git remote add origin https://github.com/AndrewZou/ReactJS_Todo_List.git
+git remote -v
+git push -u origin master
+
+***Before to commit changes in your wroking branch, 
+(1) check the status by using command, 
+git status
+(2) then add changed files into stage storage,
+git add src/app/auth/auth.service.ts or (git add .) (**to add all current changed files into stage, . means all listed files)
+(3) finally commit your changed files with git repository
+git commit -m "secret the Google API Key"
+
+
+***Create a working branch for your project
+git checkout -b workingbranch
+doskey/history
